@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">EnergyEfficiencyApp</string>
+    <string name="image_button_description">House Icon</string>
+    <string name="energycalculator_speakable_text">Energy Calculator</string>
+    <string name="kitchen_speakable_text">Kitchen</string>
+    <string name="livingroom_speakable_text">Livingroom</string>
+    <string name="bedroom_speakable_text">bedroom</string>
+    <string name="bathroom_speakable_text">bathroom</string>
+    <string name="Power_usage">Power Usage (Watt)</string>
+
+    <string name="time">Time (hour)</string>
+    <string name="Calculate">Calculate</string>
+    <string name="Daily_Power_Usage">Daily Power Usage</string>
+
+    <string name="Appliances_Kitchen">Kitchen</string>
+    <string name="House_Appliance">House Appliance</string>
+    <string name="Refrigerator">Refrigerator</string>
+    <string name="Toaster">Toaster</string>
+    <string name="Microwave">Microwave</string>
+    <string name="Kettle">Kettle</string>
+    <string name="Rice_Cooker">Rice Cooker</string>
+
+    <string name="initial_number">0</string>
+
+    <string name="Appliances_Living_Room">Living Room</string>
+    <string name="Air_Conditioner">Air Conditioner</string>
+    <string name="Vacuum">Vacuum</string>
+    <string name="TV">TV</string>
+    <string name="Printer">Printer</string>
+    <string name="Computer">Computer</string>
+
+
+    <string name="Add_Item"></string>
+
+
+</resources>
