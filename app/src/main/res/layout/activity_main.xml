@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/energycalculator"
         android:layout_width="194dp"
         android:layout_height="193dp"
         android:adjustViewBounds="true"
@@ -54,7 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/kitchen"
         android:layout_width="142dp"
         android:layout_height="141dp"
         android:adjustViewBounds="true"
@@ -73,7 +73,7 @@
         android:contentDescription="@string/kitchen_speakable_text" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/livingroom"
         android:layout_width="142dp"
         android:layout_height="141dp"
         android:adjustViewBounds="true"
@@ -92,7 +92,7 @@
         android:contentDescription="@string/livingroom_speakable_text" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/bedroom"
         android:layout_width="142dp"
         android:layout_height="141dp"
         android:adjustViewBounds="true"
@@ -111,7 +111,7 @@
         app:srcCompat="@drawable/bedroom" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/bathroom"
         android:layout_width="142dp"
         android:layout_height="141dp"
         android:adjustViewBounds="true"
