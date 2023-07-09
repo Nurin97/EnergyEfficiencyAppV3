@@ -20,6 +20,13 @@
     <string name="Kettle">Kettle</string>
     <string name="Rice_Cooker">Rice Cooker</string>
 
+    <string name="Iron">Iron</string>
+    <string name="Lamp">Lamp</string>
+
+    <string name="WashingMachine">Washing Machine</string>
+    <string name="hairdryer">Hair Dryer</string>
+    <string name="WaterHeater">Water Heater</string>
+
     <string name="initial_number">0</string>
 
     <string name="Appliances_Living_Room">Living Room</string>
@@ -31,8 +38,16 @@
 
     <string name="Swipe">swipe to continue</string>
 
+    <string name="Add"></string>
+
 
     <string name="Add_Item"></string>
+
+
+    //calculating
+    <string name="total_power_consumption">Total Power Consumption: %1$d watts</string>
+
+
 
 
 </resources>

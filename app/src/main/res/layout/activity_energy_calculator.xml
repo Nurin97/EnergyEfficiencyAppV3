@@ -8,7 +8,6 @@
     android:visibility="visible"
     tools:context=".EnergyCalculator">
 
-
     <EditText
         android:id="@+id/power_usage"
         android:layout_width="255dp"
@@ -17,10 +16,12 @@
         android:layout_marginTop="208dp"
         android:layout_marginEnd="15dp"
         android:autofillHints="number"
+        android:fontFamily="@font/alata"
         android:hint="@string/Power_usage"
         android:inputType="number"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textColorHint="@color/black"
+        android:textColorHint="#3C4043"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,9 +32,12 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:autofillHints="number"
+        android:fontFamily="@font/alata"
         android:hint="@string/time"
         android:inputType="number"
-        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#FF3C4043"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/power_usage" />
@@ -42,27 +46,45 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <Button
             android:id="@+id/calculate_button"
             android:layout_width="259dp"
-            android:layout_height="53dp"
-
+            android:layout_height="60dp"
             android:layout_marginStart="76dp"
-            android:layout_marginTop="678dp"
+            android:layout_marginTop="500dp"
             android:layout_marginEnd="76dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/alata"
             android:text="@string/Calculate"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/calculate_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.731" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

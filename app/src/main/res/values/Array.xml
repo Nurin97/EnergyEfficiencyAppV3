@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+        <item>kitchen</item>
+        <item>livingroom</item>
+        <item>bedroom</item>
+        <item>bathroom</item>
+    </string-array>
+
+</resources>

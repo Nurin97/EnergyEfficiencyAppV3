@@ -11,14 +11,14 @@
 
     <ImageView
         android:id="@+id/imageView21"
-        android:layout_width="262dp"
-        android:layout_height="251dp"
+        android:layout_width="291dp"
+        android:layout_height="297dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginEnd="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="50dp"
         android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -28,19 +28,21 @@
 
     <Button
         android:id="@+id/swipeButton"
-        android:layout_width="286dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="130dp"
         android:background="@drawable/rounded_button"
         android:text="@string/Swipe"
         android:textColor="@color/white"
         android:textColorHighlight="@color/Blue_Background"
-        android:textColorLink="@color/Blue_Background" />
+        android:textColorLink="@color/Blue_Background"
+        app:rippleColor="@color/Blue0" />
+
 
 
 </RelativeLayout>

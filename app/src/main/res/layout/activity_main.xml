@@ -16,7 +16,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Energy Usage Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/energycalculator"
+        app:layout_constraintEnd_toEndOf="@+id/layoutTable"
+        app:layout_constraintStart_toStartOf="@+id/layoutTable"
+        app:layout_constraintTop_toTopOf="@+id/layoutTable" />
 
     <ImageButton
         android:id="@+id/energycalculator"
@@ -33,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251"
+        app:layout_constraintVertical_bias="0.187"
         app:srcCompat="@drawable/energycalculator" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -60,17 +73,17 @@
         android:adjustViewBounds="true"
         android:background="@color/Green"
 
+        android:contentDescription="@string/kitchen_speakable_text"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.552"
-        app:srcCompat="@drawable/kitchen"
-        android:contentDescription="@string/kitchen_speakable_text" />
+        app:srcCompat="@drawable/kitchen" />
 
     <ImageButton
         android:id="@+id/livingroom"

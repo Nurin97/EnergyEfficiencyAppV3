@@ -15,5 +15,13 @@
     <color name="Green">#6BCB77</color>
     <color name="gradient1">#FF6F1E</color>
     <color name="gradient2">#FFECA8</color>
+    <color name="Amber">#FFBF00</color>
+    <color name="BananaYellow">#FFD12A</color>
+    <color name="Mustard">#FFDB58</color>
+    <color name="Blond">#FAF0BE</color>
+    <color name="Peach">#FFE5B4</color>
+    <color name="Sunset">#FAD6A5</color>
+    <color name="PastelOrange">#FFB347</color>
+    
 
 </resources>
