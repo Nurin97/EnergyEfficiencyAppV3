@@ -78,24 +78,26 @@
 
                 <ImageButton
                     android:id="@+id/remove1"
+                    android:tag="@string/Computer"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="140dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Remove"
+                    android:contentDescription="@string/remove_computer_button_description"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_remove_circle_24" />
 
                 <ImageButton
                     android:id="@+id/add1"
+                    android:tag="@string/Computer"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="140dp"
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add_computer_button_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -161,24 +163,26 @@
 
                 <ImageButton
                     android:id="@+id/remove2"
+                    android:tag="@string/Air_Conditioner"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="140dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Remove"
+                    android:contentDescription="@string/remove_Air_Conditioner_button_description"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_remove_circle_24" />
 
                 <ImageButton
                     android:id="@+id/add2"
+                    android:tag="@string/Air_Conditioner"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="140dp"
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add_Air_Conditioner_button_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -233,12 +237,13 @@
 
                 <ImageButton
                     android:id="@+id/add3"
+                    android:tag="@string/TV"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="140dp"
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add_TV_button_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -246,12 +251,13 @@
 
                 <ImageButton
                     android:id="@+id/remove3"
+                    android:tag="@string/TV"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="140dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Remove"
+                    android:contentDescription="@string/remove_TV_button_description"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -314,28 +320,30 @@
 
                 <ImageButton
                     android:id="@+id/add4"
+                    android:tag="@string/Vacuum"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="140dp"
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add_Vacuum_button_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_add_circle_24" />
 
-
                 <ImageButton
                     android:id="@+id/remove4"
+                    android:tag="@string/Vacuum"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="140dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Remove"
+                    android:contentDescription="@string/remove_Vacuum_button_description"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_remove_circle_24" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -400,24 +408,26 @@
 
                 <ImageButton
                     android:id="@+id/remove5"
+                    android:tag="@string/Printer"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="140dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Remove"
+                    android:contentDescription="@string/remove_Printer_button_description"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_remove_circle_24" />
 
                 <ImageButton
                     android:id="@+id/add5"
+                    android:tag="@string/Printer"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="140dp"
                     android:layout_marginEnd="5dp"
                     android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add_Printer_button_description"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/baseline_add_circle_24" />

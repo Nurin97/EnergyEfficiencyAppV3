@@ -38,7 +38,19 @@
 
     <string name="Swipe">swipe to continue</string>
 
-    <string name="Add"></string>
+
+
+    <string name="add_computer_button_description">Add an appliance</string>
+    <string name="remove_computer_button_description">Add an appliance</string>
+    <string name="add_Air_Conditioner_button_description">Add an appliance</string>
+    <string name="remove_Air_Conditioner_button_description">Add an appliance</string>
+    <string name="add_Vacuum_button_description">Add an appliance</string>
+    <string name="remove_Vacuum_button_description">Add an appliance</string>
+    <string name="add_TV_button_description">Add an appliance</string>
+    <string name="remove_TV_button_description">Add an appliance</string>
+    <string name="add_Printer_button_description">Add an appliance</string>
+    <string name="remove_Printer_button_description">Add an appliance</string>
+
 
 
     <string name="Add_Item"></string>
