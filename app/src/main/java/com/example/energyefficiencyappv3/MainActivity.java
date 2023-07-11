@@ -9,23 +9,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton energycalculatorButton;
-    private ImageButton kitchenButton;
-    private ImageButton livingroomButton;
-    private ImageButton bedroomButton;
-    private ImageButton bathroomButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // Find ImageButtons by their IDs
-        energycalculatorButton = findViewById(R.id.energycalculator);
-        kitchenButton = findViewById(R.id.kitchen);
-        livingroomButton = findViewById(R.id.livingroom);
-        bedroomButton = findViewById(R.id.bedroom);
-        bathroomButton = findViewById(R.id.bathroom);
+        ImageButton energycalculatorButton = findViewById(R.id.energycalculator);
+        ImageButton kitchenButton = findViewById(R.id.kitchen);
+        ImageButton livingroomButton = findViewById(R.id.livingroom);
+        ImageButton bedroomButton = findViewById(R.id.bedroom);
+        ImageButton bathroomButton = findViewById(R.id.bathroom);
 
 
         // Set click listeners for the ImageButtons
@@ -65,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void openKitchenPage() {
         // Start the KitchenActivity
-        Intent intent = new Intent(MainActivity.this, ApplianceCalculator2.class);
+        Intent intent = new Intent(MainActivity.this, ApplianceCalculator.class);
         startActivity(intent);
     }
 
     private void openLivingRoomPage() {
         // Start the LivingRoomActivity
-        Intent intent = new Intent(MainActivity.this, ApplianceCalculator.class);
+        Intent intent = new Intent(MainActivity.this, ApplianceCalculator2.class);
         startActivity(intent);
     }
 

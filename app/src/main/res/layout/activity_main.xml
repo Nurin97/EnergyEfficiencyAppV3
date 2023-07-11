@@ -10,13 +10,17 @@
 
     <View
         android:id="@+id/layoutTable"
-        android:layout_width="348dp"
-        android:layout_height="701dp"
-        android:background="@color/grey1"
+        android:layout_width="330dp"
+        android:layout_height="596dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/background_radius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView7"
@@ -28,13 +32,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/energycalculator"
         app:layout_constraintEnd_toEndOf="@+id/layoutTable"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/layoutTable"
-        app:layout_constraintTop_toTopOf="@+id/layoutTable" />
+        app:layout_constraintTop_toTopOf="@+id/layoutTable"
+        app:layout_constraintVertical_bias="0.777" />
 
     <ImageButton
         android:id="@+id/energycalculator"
-        android:layout_width="194dp"
-        android:layout_height="193dp"
+        android:layout_width="157dp"
+        android:layout_height="156dp"
         android:adjustViewBounds="true"
 
         android:contentDescription="@string/energycalculator_speakable_text"
@@ -43,33 +49,28 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187"
+        app:layout_constraintVertical_bias="0.28"
         app:srcCompat="@drawable/energycalculator" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
         android:background="@drawable/bottom_background"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
         android:elevation="2dp"
-        app:menu="@menu/bottom_menu"
         app:itemIconSize="30dp"
-
-        app:itemRippleColor="@android:color/transparent"
-        app:itemTextAppearance="@null"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTable"
+        app:menu="@menu/bottom_menu" />
 
     <ImageButton
         android:id="@+id/kitchen"
-        android:layout_width="142dp"
-        android:layout_height="141dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:adjustViewBounds="true"
         android:background="@color/Green"
 
@@ -79,54 +80,54 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552"
+        app:layout_constraintVertical_bias="0.605"
         app:srcCompat="@drawable/kitchen" />
 
     <ImageButton
         android:id="@+id/livingroom"
-        android:layout_width="142dp"
-        android:layout_height="141dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:adjustViewBounds="true"
         android:background="@color/Green"
 
+        android:contentDescription="@string/livingroom_speakable_text"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552"
-        app:srcCompat="@drawable/livingroom"
-        android:contentDescription="@string/livingroom_speakable_text" />
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/livingroom" />
 
     <ImageButton
         android:id="@+id/bedroom"
-        android:layout_width="142dp"
-        android:layout_height="141dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:adjustViewBounds="true"
         android:background="@color/Green"
 
+        android:contentDescription="@string/bedroom_speakable_text"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        android:contentDescription="@string/bedroom_speakable_text"
+        app:layout_constraintVertical_bias="0.834"
         app:srcCompat="@drawable/bedroom" />
 
     <ImageButton
         android:id="@+id/bathroom"
-        android:layout_width="142dp"
-        android:layout_height="141dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:adjustViewBounds="true"
         android:background="@color/Green"
 
@@ -136,11 +137,12 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_bias="0.834"
         app:srcCompat="@drawable/bathroom" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
