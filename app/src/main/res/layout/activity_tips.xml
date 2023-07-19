@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53ad56"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".TipsActivity">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="@string/Energy_Saving_Tips"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="348dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </SearchView>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView16">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/switch_off" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView1"
+                android:layout_alignTop="@id/imageView1"
+                android:layout_alignEnd="@id/imageView1"
+                android:layout_alignBottom="@id/imageView1"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Switch off appliances when you're not using them. This includes things like TVs, computers, printers, and even chargers. Even when they're turned off, these appliances can still use a small amount of energy in standby mode."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/save_electricity" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView2"
+                android:layout_alignTop="@id/imageView2"
+                android:layout_alignEnd="@id/imageView2"
+                android:layout_alignBottom="@id/imageView2"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Use energy-efficient appliances. When you're buying new appliances, look for ones with the Energy Star label. These appliances are designed to use less energy than standard models."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/washing_machine" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignTop="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_alignBottom="@id/imageView3"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Wash your clothes in cold water. Most of the energy used to wash clothes goes to heating the water. By washing your clothes in cold water, you can save a significant amount of energy."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/off_air_cond" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView4"
+                android:layout_alignTop="@id/imageView4"
+                android:layout_alignEnd="@id/imageView4"
+                android:layout_alignBottom="@id/imageView4"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Air-dry your clothes. If you have the time, air-drying your clothes is a great way to save energy. Clothes dryers use a lot of energy, so air-drying is a much more efficient option."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/off_plug" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView5"
+                android:layout_alignTop="@id/imageView5"
+                android:layout_alignEnd="@id/imageView5"
+                android:layout_alignBottom="@id/imageView5"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Unplug appliances when you're not using them. This is especially important for appliances that have a standby mode. Even when they're turned off, these appliances can still use a small amount of energy."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/turn_off_light" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView6"
+                android:layout_alignTop="@id/imageView6"
+                android:layout_alignEnd="@id/imageView6"
+                android:layout_alignBottom="@id/imageView6"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Use natural light whenever possible. During the day, open up your curtains and blinds to let in natural light. This will help you reduce your reliance on electric lights."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout7"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/thermostat" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView7"
+                android:layout_alignTop="@id/imageView7"
+                android:layout_alignEnd="@id/imageView7"
+                android:layout_alignBottom="@id/imageView7"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Install a programmable thermostat. A programmable thermostat can help you save energy by automatically adjusting your heating and cooling system when you're asleep or away from home."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout8"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/peti_ais" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView8"
+                android:layout_alignTop="@id/imageView8"
+                android:layout_alignEnd="@id/imageView8"
+                android:layout_alignBottom="@id/imageView8"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Use a clothesline to dry your clothes. This is a great way to save energy and reduce your carbon footprint."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout9"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/tv" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView9"
+                android:layout_alignTop="@id/imageView9"
+                android:layout_alignEnd="@id/imageView9"
+                android:layout_alignBottom="@id/imageView9"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Upgrade your HVAC system. If your HVAC system is old and inefficient, upgrading to a newer, more efficient model can save you a significant amount of money on your energy bills."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout10"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintTop_toBottomOf="@id/layout9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/vacuum" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView10"
+                android:layout_alignTop="@id/imageView10"
+                android:layout_alignEnd="@id/imageView10"
+                android:layout_alignBottom="@id/imageView10"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transaprent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Weatherize your home. Weatherizing your home can help to keep the heat in during the winter and the cool air in during the summer. This can lead to significant energy savings."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout11"
+            android:layout_width="336dp"
+            android:layout_height="428dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout10">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="245dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/microwave" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="287dp"
+                android:layout_height="267dp"
+                android:layout_alignStart="@id/imageView11"
+                android:layout_alignTop="@id/imageView11"
+                android:layout_alignEnd="@id/imageView11"
+                android:layout_alignBottom="@id/imageView11"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginBottom="-115dp"
+                android:background="@drawable/bg_transparent_grey"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Cook with your oven less often. Use the microwave or stovetop whenever possible. This will help you save energy and reduce your carbon footprint."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <!-- Add additional layouts here with different IDs (e.g., layout2, layout3, etc.) -->
+        <!-- Each layout should have a unique ID, and you can adjust the margin and constraints accordingly -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

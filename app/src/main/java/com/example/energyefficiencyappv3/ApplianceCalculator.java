@@ -1,25 +1,30 @@
 package com.example.energyefficiencyappv3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class ApplianceCalculator extends AppCompatActivity implements View.OnClickListener {
 
     private final int[] quantities = new int[5];
     private final ImageButton[] addButtons = new ImageButton[5];
-
     private final ImageButton[] removeButtons = new ImageButton[5];
     private final TextView[] quantityTextViews = new TextView[5];
+
+
+
+    private String selectedAppliance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appliance_calculator);
+        setContentView(R.layout.activity_appliance_calculator2);
 
         // Find views
         addButtons[0] = findViewById(R.id.add1);
@@ -45,82 +50,98 @@ public class ApplianceCalculator extends AppCompatActivity implements View.OnCli
             addButtons[i].setOnClickListener(this);
             removeButtons[i].setOnClickListener(this);
         }
+
+        Button calculateButton = findViewById(R.id.calculateButton);
+        calculateButton.setOnClickListener(this);
     }
+
+
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
+        int index = -1;
         if (id == R.id.add1) {
-            quantities[0]++;
+            index = 0;
+            selectedAppliance = "Refrigerator";
         } else if (id == R.id.add2) {
-            quantities[1]++;
+            index = 1;
+            selectedAppliance = "Toaster";
         } else if (id == R.id.add3) {
-            quantities[2]++;
+            index = 2;
+            selectedAppliance = "Rice Cooker";
         } else if (id == R.id.add4) {
-            quantities[3]++;
+            index = 3;
+            selectedAppliance = "Microwave";
         } else if (id == R.id.add5) {
-            quantities[4]++;
+            index = 4;
+            selectedAppliance = "Kettle";
         } else if (id == R.id.remove1) {
-            if (quantities[0] > 0) {
-                quantities[0]--;
-            }
+            selectedAppliance = "Refrigerator";
+            index = 0;
         } else if (id == R.id.remove2) {
-            if (quantities[1] > 0) {
-                quantities[1]--;
-            }
+            index = 1;
+            selectedAppliance = "Toaster";
         } else if (id == R.id.remove3) {
-            if (quantities[2] > 0) {
-                quantities[2]--;
-            }
+            index = 2;
+            selectedAppliance = "Rice Cooker";
         } else if (id == R.id.remove4) {
-            if (quantities[3] > 0) {
-                quantities[3]--;
-            }
+            index = 3;
+            selectedAppliance = "Microwave";
         } else if (id == R.id.remove5) {
-            if (quantities[4] > 0) {
-                quantities[4]--;
+            index = 4;
+            selectedAppliance = "Kettle";
+        } else if (id == R.id.calculateButton) {
+            calculateTotalPowerConsumption();
+        }
+
+        if (index != -1) {
+            updateQuantity(index, id);
+        }
+    }
+
+    private void updateQuantity(int index, int buttonId) {
+        if (buttonId == R.id.add1 || buttonId == R.id.add2 || buttonId == R.id.add3 || buttonId == R.id.add4 || buttonId == R.id.add5) {
+            quantities[index]++;
+        } else if (buttonId == R.id.remove1 || buttonId == R.id.remove2 || buttonId == R.id.remove3 || buttonId == R.id.remove4 || buttonId == R.id.remove5) {
+            if (quantities[index] > 0) {
+                quantities[index]--;
             }
         }
-        updateQuantities();
+        quantityTextViews[index].setText(String.valueOf(quantities[index]));
     }
 
-    private void updateQuantities() {
-        for (int i = 0; i < 5; i++) {
-            quantityTextViews[i].setText(String.valueOf(quantities[i]));
-        }
+    public void calculateTotalPowerConsumption() {
+        // Calculate the total power consumption based on the selected appliances and quantities
+        int totalPowerConsumption = calculatePowerConsumption();
+
+        // Create an intent to start the LivingroomResult activity
+        Intent intent = new Intent(ApplianceCalculator.this, LivingroomResult.class);
+        intent.putExtra("totalPowerConsumption", totalPowerConsumption);
+        startActivity(intent);
     }
 
-    public void calculateTotalPowerConsumption(View view) {
-        Spinner spinner = findViewById(R.id.spinner);
-        String selectedAppliance = spinner.getSelectedItem().toString();
-
-        int quantity1 = getQuantity(R.id.quantity1);
-        int quantity2 = getQuantity(R.id.quantity2);
-        int quantity3 = getQuantity(R.id.quantity3);
-        int quantity4 = getQuantity(R.id.quantity4);
-
-        // Calculate the total power consumption based on the selected appliance and quantities
+    private int calculatePowerConsumption() {
         int totalPowerConsumption = 0;
-        if (selectedAppliance.equals("Refrigerator")) {
-            totalPowerConsumption = quantity1 * 100; // Assuming each refrigerator consumes 100 watts
-        } else if (selectedAppliance.equals("Toaster")) {
-            totalPowerConsumption = quantity2 * 50; // Assuming each toaster consumes 50 watts
-        } else if (selectedAppliance.equals("Rice Cooker")) {
-            totalPowerConsumption = quantity3 * 200; // Assuming each rice cooker consumes 200 watts
-        } else if (selectedAppliance.equals("Microwave")) {
-            totalPowerConsumption = quantity4 * 800; // Assuming each microwave consumes 800 watts
+        // Calculate the total power consumption based on the quantities and appliance types
+        // Implement your logic here to calculate the power consumption for each appliance
+        switch (selectedAppliance) {
+            case "Refrigerator":
+                totalPowerConsumption = quantities[0] * 400; // Assuming each refrigerator consumes 400 watts
+                break;
+            case "Toaster":
+                totalPowerConsumption = quantities[1] * 850; // Assuming each toaster consumes 850 watts
+                break;
+            case "Rice Cooker":
+                totalPowerConsumption = quantities[2] * 730; // Assuming each rice cooker consumes 730 watts
+                break;
+            case "Microwave":
+                totalPowerConsumption = quantities[3] * 1500; // Assuming each microwave consumes 1500 watts
+                break;
+            case "Kettle":
+                totalPowerConsumption = quantities[4] * 1800; // Assuming each printer consumes 1800 watts
+                break;
         }
-
-        // Display the total power consumption in the TextView
-        TextView totalPowerTextView = findViewById(R.id.totalPowerTextView);
-        String totalPowerString = getString(R.string.total_power_consumption, totalPowerConsumption);
-        totalPowerTextView.setText(totalPowerString);
-
-    }
-
-    private int getQuantity(int quantityTextViewId) {
-        TextView quantityTextView = findViewById(quantityTextViewId);
-        String quantityString = quantityTextView.getText().toString();
-        return Integer.parseInt(quantityString);
+        return totalPowerConsumption;
     }
 }

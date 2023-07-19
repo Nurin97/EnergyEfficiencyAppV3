@@ -101,14 +101,23 @@ public class ApplianceCalculator3 extends AppCompatActivity implements View.OnCl
 
         // Calculate the total power consumption based on the selected appliance and quantities
         int totalPowerConsumption = 0;
-        if (selectedAppliance.equals("Refrigerator")) {
-            totalPowerConsumption = quantity1 * 100; // Assuming each refrigerator consumes 100 watts
-        } else if (selectedAppliance.equals("Toaster")) {
-            totalPowerConsumption = quantity2 * 50; // Assuming each toaster consumes 50 watts
-        } else if (selectedAppliance.equals("Rice Cooker")) {
-            totalPowerConsumption = quantity3 * 200; // Assuming each rice cooker consumes 200 watts
-        } else if (selectedAppliance.equals("Microwave")) {
-            totalPowerConsumption = quantity4 * 800; // Assuming each microwave consumes 800 watts
+        switch (selectedAppliance) {
+            case "Iron":
+                totalPowerConsumption = quantity1 * 1200; // Assuming each refrigerator consumes 100 watts
+
+                break;
+            case "Lamp":
+                totalPowerConsumption = quantity2 * 30; // Assuming each toaster consumes 50 watts
+
+                break;
+            case "TV":
+                totalPowerConsumption = quantity3 * 150; // Assuming each rice cooker consumes 200 watts
+
+                break;
+            case "Vacuum":
+                totalPowerConsumption = quantity4 * 1220; // Assuming each microwave consumes 800 watts
+
+                break;
         }
 
         // Display the total power consumption in the TextView

@@ -23,5 +23,17 @@
     <color name="Sunset">#FAD6A5</color>
     <color name="PastelOrange">#FFB347</color>
     
+    <color name="Sable">#E8E1D6</color>
+    <color name="Menthe">#B2E1D2</color>
+    <color name="Ciel">#78C5F8</color>
+    <color name="Orange">#FF8C00</color>
+    <color name="Mango">#FFC20E</color>
+    <color name="Lime">#D8EB27</color>
+    
+    <color name="BabyBlue">#C8EDFF</color>
+    <color name="PurpleBlue">#4979E0</color>
+    <color name="Pink">#FFE3DF</color>
+
+    <color name="Red">#ff0000</color>
 
 </resources>

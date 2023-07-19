@@ -94,7 +94,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Remove"
+            android:contentDescription="@string/remove_iron_button_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -106,7 +106,7 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Add"
+            android:contentDescription="@string/add_iron_button_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -174,7 +174,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Remove"
+            android:contentDescription="@string/remove_lamp_button_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -186,7 +186,7 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Add"
+            android:contentDescription="@string/add_lamp_button_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -246,7 +246,7 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Add"
+            android:contentDescription="@string/add_TV_button_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -258,7 +258,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Remove"
+            android:contentDescription="@string/remove_TV_button_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -326,7 +326,7 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Add"
+            android:contentDescription="@string/add_Vacuum_button_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_add_circle_24" />
@@ -338,7 +338,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Remove"
+            android:contentDescription="@string/remove_Vacuum_button_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -411,7 +411,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="140dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Remove"
+            android:contentDescription="@string/remove_computer_button_description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_remove_circle_24" />
@@ -423,22 +423,13 @@
             android:layout_marginTop="140dp"
             android:layout_marginEnd="5dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="Add"
+            android:contentDescription="@string/add_computer_button_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_add_circle_24" />
 
       </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/totalPowerTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="Total Power Consumption: "
-        android:textSize="20sp" />
 
 
     <Button

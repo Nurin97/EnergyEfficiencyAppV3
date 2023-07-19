@@ -31,20 +31,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="45dp"
-            android:contextClickable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
         <LinearLayout
             android:baselineAligned="false"
             android:layout_width="match_parent"
@@ -287,15 +273,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/totalPowerTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:text="Total Power Consumption: "
-            android:textSize="20sp" />
 
 
         <Button

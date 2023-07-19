@@ -17,6 +17,8 @@ public class ApplianceCalculator2 extends AppCompatActivity implements View.OnCl
     private final ImageButton[] removeButtons = new ImageButton[5];
     private final TextView[] quantityTextViews = new TextView[5];
 
+
+
     private String selectedAppliance;
 
     @Override
@@ -125,19 +127,19 @@ public class ApplianceCalculator2 extends AppCompatActivity implements View.OnCl
         // Implement your logic here to calculate the power consumption for each appliance
         switch (selectedAppliance) {
             case "Computer":
-                totalPowerConsumption = quantities[0] * 100; // Assuming each refrigerator consumes 100 watts
+                totalPowerConsumption = quantities[0] * 150; // Assuming each refrigerator consumes 100 watts
                 break;
             case "Air Conditioner":
-                totalPowerConsumption = quantities[1] * 50; // Assuming each toaster consumes 50 watts
+                totalPowerConsumption = quantities[1] * 750; // Assuming each toaster consumes 50 watts
                 break;
             case "TV":
-                totalPowerConsumption = quantities[2] * 200; // Assuming each rice cooker consumes 200 watts
+                totalPowerConsumption = quantities[2] * 150; // Assuming each rice cooker consumes 200 watts
                 break;
             case "Vacuum":
-                totalPowerConsumption = quantities[3] * 800; // Assuming each microwave consumes 800 watts
+                totalPowerConsumption = quantities[3] * 1220; // Assuming each microwave consumes 800 watts
                 break;
             case "Printer":
-                totalPowerConsumption = quantities[4] * 800; // Assuming each printer consumes 800 watts
+                totalPowerConsumption = quantities[4] * 25; // Assuming each printer consumes 800 watts
                 break;
         }
         return totalPowerConsumption;

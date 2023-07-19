@@ -3,11 +3,9 @@ package com.example.energyefficiencyappv3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 
 public class EnergyCalculator extends AppCompatActivity {
 
@@ -25,12 +23,7 @@ public class EnergyCalculator extends AppCompatActivity {
         resultTextView = findViewById(R.id.result_text);
 
         Button calculateButton = findViewById(R.id.calculate_button);
-        calculateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                calculateEnergyUsage();
-            }
-        });
+        calculateButton.setOnClickListener(view -> calculateEnergyUsage());
     }
 
     private void calculateEnergyUsage() {
@@ -42,7 +35,7 @@ public class EnergyCalculator extends AppCompatActivity {
             double time = Double.parseDouble(timeStr);
 
             double energyUsage = powerUsage * time;
-            String resultMessage = "Energy Usage: /n " + energyUsage + " Watt-hours";
+            String resultMessage = "Energy Usage: " + energyUsage + " Watt-hours";
 
             resultTextView.setText(resultMessage);
         } else {
@@ -50,3 +43,4 @@ public class EnergyCalculator extends AppCompatActivity {
         }
     }
 }
+

@@ -1,17 +1,40 @@
 <resources>
+
+    //register
+    <string name="Register">REGISTER</string>
+    <string name="Register_text">Already Have an Account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+
+    //Login
+    <string name="Login">Login</string>
+    <string name="Forgot_text">Forgot Password?</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="No_Account">Don\'t have an Account?</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="Google">Google</string>
+    <string name="Facebook">Facebook</string>
+
+
     <string name="app_name">EnergyEfficiencyApp</string>
     <string name="image_button_description">House Icon</string>
     <string name="energycalculator_speakable_text">Energy Calculator</string>
+    <string name="Energy_Usage_Calculator">Energy Usage Calculator</string>
+    <string name="Appliance_Calculator">Appliance Calculator</string>
     <string name="kitchen_speakable_text">Kitchen</string>
     <string name="livingroom_speakable_text">Livingroom</string>
     <string name="bedroom_speakable_text">bedroom</string>
     <string name="bathroom_speakable_text">bathroom</string>
     <string name="Power_usage">Power Usage (Watt)</string>
 
+
     <string name="time">Time (hour)</string>
     <string name="Calculate">Calculate</string>
     <string name="Daily_Power_Usage">Daily Power Usage</string>
 
+
+    //Appliances
     <string name="Appliances_Kitchen">Kitchen</string>
     <string name="House_Appliance">House Appliance</string>
     <string name="Refrigerator">Refrigerator</string>
@@ -20,9 +43,20 @@
     <string name="Kettle">Kettle</string>
     <string name="Rice_Cooker">Rice Cooker</string>
 
+
+    //bottom nav
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <string name="Tips">Tips</string>
+    <string name="Graph">Graph</string>
+    <string name="Chart">Chart</string>
+
+
     <string name="Iron">Iron</string>
     <string name="Lamp">Lamp</string>
 
+
+    //bathroom appliances
     <string name="WashingMachine">Washing Machine</string>
     <string name="hairdryer">Hair Dryer</string>
     <string name="WaterHeater">Water Heater</string>
@@ -39,7 +73,6 @@
     <string name="Swipe">swipe to continue</string>
 
 
-
     <string name="add_computer_button_description">Add an appliance</string>
     <string name="remove_computer_button_description">Add an appliance</string>
     <string name="add_Air_Conditioner_button_description">Add an appliance</string>
@@ -52,12 +85,40 @@
     <string name="remove_Printer_button_description">Add an appliance</string>
 
 
+    <string name="remove_iron_button_description">Add an appliance</string>
+    <string name="add_iron_button_description">Add an appliance</string>
+    <string name="remove_lamp_button_description">Add an appliance</string>
+    <string name="add_lamp_button_description">Add an appliance</string>
+
+
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Setting">Setting</string>
+    <string name="Notification">Notification</string>
+
+
+    //Tips
+    <string name="Energy_Saving_Tips">Energy Saving Tips</string>
+    <string name="switch_off_txt">Switch off appliances when you\'re not using them. This includes things like TVs, computers, printers, and even chargers. Even when they\'re turned off, these appliances can still use a small amount of energy in standby mode.</string>
+    <string name="use_energy_appliance_txt">Use energy-efficient appliances. When you\'re buying new appliances, look for ones with the Energy Star label. These appliances are designed to use less energy than standard models.</string>
+    <string name="Wash_clothes_txt">Wash your clothes in cold water. Most of the energy used to wash clothes goes to heating the water. By washing your clothes in cold water, you can save a significant amount of energy.</string>
+    <string name="air_dry_txt">Air-dry your clothes. If you have the time, air-drying your clothes is a great way to save energy. Clothes dryers use a lot of energy, so air-drying is a much more efficient option.</string>
+    <string name="unplug_txt">Unplug appliances when you\'re not using them. This is especially important for appliances that have a standby mode. Even when they\'re turned off, these appliances can still use a small amount of energy.</string>
+    <string name="natural_light_txt">Use natural light whenever possible. During the day, open up your curtains and blinds to let in natural light. This will help you reduce your reliance on electric lights.</string>
+    <string name="install_thermostat_txt">Install a programmable thermostat. A programmable thermostat can help you save energy by automatically adjusting your heating and cooling system when you\'re asleep or away from home.</string>
+    <string name="clothesline_txt">Use a clothesline to dry your clothes. This is a great way to save energy and reduce your carbon footprint.</string>
+    <string name="HVAC_system_txt">Upgrade your HVAC system. If your HVAC system is old and inefficient, upgrading to a newer, more efficient model can save you a significant amount of money on your energy bills.</string>
+    <string name="weatherize_txt">Weatherize your home. Weatherizing your home can help to keep the heat in during the winter and the cool air in during the summer. This can lead to significant energy savings.</string>
+    <string name="cook_oven_txt">Cook with your oven less often. Use the microwave or stove top whenever possible. This will help you save energy and reduce your carbon footprint.</string>
+
 
     <string name="Add_Item"></string>
 
 
     //calculating
     <string name="total_power_consumption">Total Power Consumption: %1$d watts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
